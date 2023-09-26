@@ -1,10 +1,13 @@
+
 <?php
 
+// requireing the array
+require "./includes/array.includes.php";
 
 // this function asks for a mltidimensianal array as parameter and then prints it out
 function multidimensionalArrayPrinter ($members) {
     foreach ($members as $member => $charachteristics) {
-        echo "<strong>" . $member . "</strong> <br>";
+        echo "<strong><a href='./details.php?user=$member'>" . $member . "</a></strong> <br>";
         foreach ($charachteristics as $charachteristic) {
             echo $charachteristic . "<br>";
         }
@@ -19,21 +22,7 @@ function randomArray ($array) {
     echo $array[$randomValue];
 }
 
-// an array to test the multidimensionalArrayPrinter
-$members = [
-    "Joshua" => [
-        "bapao",
-        "MMA"
-    ],
-    "Tim" => [
-        "pizza",
-        "skateboarden"
-    ],
-    "Joel" => [
-        "pasta",
-        "fitness"
-    ]
-];
+
 
 // an array tot test tehe randomArray function
 $docenten = ['Stephan', 'Arie', 'Wout', 'Rene', 'Jan'];
