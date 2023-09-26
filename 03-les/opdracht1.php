@@ -4,7 +4,7 @@
 // requireing the array
 require "./includes/array.includes.php";
 
-// this function asks for a mltidimensianal array as parameter and then prints it out
+// this function asks for a mltidimensianal array as parameter and then prints only the first array out
 function multidimensionalArrayPrinter ($members) {
     foreach ($members as $member => $charachteristics) {
         echo "<strong><a href='./details.php?user=$member'>" . $member . "</a></strong> <br>";
