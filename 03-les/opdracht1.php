@@ -8,9 +8,6 @@ require "./includes/array.includes.php";
 function multidimensionalArrayPrinter ($members) {
     foreach ($members as $member => $charachteristics) {
         echo "<strong><a href='./details.php?user=$member'>" . $member . "</a></strong> <br>";
-        foreach ($charachteristics as $charachteristic) {
-            echo $charachteristic . "<br>";
-        }
         echo "<hr>";
     }
 }

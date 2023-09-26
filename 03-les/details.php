@@ -13,9 +13,11 @@ $currentUser = $_GET['user'];
     <title>Document</title>
 </head>
 <body>
-    <h1>hai <?php echo $currentUser; ?></h1>
+    <h1>Details <?php echo $currentUser; ?></h1>
 
 <?php
+
+// looping through the array inside the selected user so that we get the details
     foreach ($members[$currentUser] as $details) {
         echo $details . "<br>";
     }
